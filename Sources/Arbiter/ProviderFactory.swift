@@ -72,6 +72,7 @@ public struct ProviderFactory: Sendable {
     }
 
     /// Create an Apple Foundation Models provider (no API key needed)
+    @available(iOS 26.0, macOS 26.0, visionOS 26.0, *)
     public static func appleFoundation() -> ProviderFactory {
         ProviderFactory {
             AppleFoundationProvider()
